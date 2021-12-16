@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <%- include('../partials/head')%>
+    <body>
+        <%- include('../partials/header')%>
+        <main>
+            <div class="contenedor-signup">
+                <form action="/signup" method="POST">
+                <h2>Sign Up</h2>
+                <label>First Name</label>
+                <input type="text" name="nombre">
+                <label>Last Name</label>
+                <input type="text" name="apellido">
+                <label>Email</label>
+                <input type="email" name="email">
+                <label>User Name</label>
+                <input type="text" name="nickname">
+                <label>Password</label>
+                <input type="password" name="contraseña">
+                <input type="submit" value="Crear Usuario">
+                <a href="/login">Already you are member?. Sign In</a>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

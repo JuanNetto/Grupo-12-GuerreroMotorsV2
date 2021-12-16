@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+    </body>
+    <main>
+        <div class="contenedor-agregar">
+            <form method="POST" action="/agregar">
+            <h2>Agregar un vehiculo</h2>
+            <label>Introduzca id</label>
+            <input type="number" name="id">
+            <label>Introduzca marca</label>
+            <input type="text" name="marca">
+            <label>Introduzca modelo</label>
+            <input type="text" name="modelo">
+            <label>Introduzca color</label>
+            <input type="text" name="color">
+            <label>Introduzca precio</label>
+            <input type="number" name="precio">
+            <input type="submit">
+            <input type="text" name="estado" value="true">
+            </form>
+        </div>
+    </main>
+</html>

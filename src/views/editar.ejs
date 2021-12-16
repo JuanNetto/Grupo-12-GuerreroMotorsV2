@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <%- include('../partials/head')%>
+    <body>
+        <%- include('../partials/header')%>
+    </body>
+    <main>
+        <section class="contenedor-general">
+
+            <label>Seleccione el vehiculo que desea modificar</label> 
+            <ul>
+                <% productosJSON.forEach(function(productos){  %>
+                <li>
+                    <a href="/editar/<%=productos.id %>"><%=productos.id %></a>
+                </li>
+                <%  }); %>
+            </ul>
+                                          
+        </section>
+
+    </main>
+</html>
